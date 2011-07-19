@@ -1,0 +1,33 @@
+Wifleaks.tk
+
+Este es el repo completito, se han modificado algunas cosas en:
+
+dbconnect.pgp
+oath/secret.php
+
+donde quite los passwords para accesar a la base de datos del servidor en linea.
+
+Realmente no necesitaran el twitter login desde que no funciona offline.
+Si quieren editar en modo administrador, solo tienen que moverle al index.php y en las primeras lineas lo cambian para darse acceso.
+
+En esta pagina (index.php) sera donde mayormente estaremos trabajando para mejorar la experiencia de usuario.
+Claro que se aceptan mejoras en todo el proyecto.
+
+json.php escupe todas las claves en modo json... esto es para integrarlo a la extension de chrome :D
+
+happy hacking
+
+GNU STUFF
+Copyright (C) 2011  Carlos F. Flores Benavides (Zero Dragon) zerothedragon.com
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
