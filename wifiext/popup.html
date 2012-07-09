@@ -1,0 +1,75 @@
+<html>
+<head>
+	<link type="text/css" href="css/dot-luv/jquery-ui-1.8.13.custom.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jqueryui.js"></script>
+  <script type="text/javascript" src="js/getJson.js"></script>
+	<style>
+	.ui-widget {
+		font-size: 12px;
+	}
+	#tags, #sinc{
+		font-size: 16px;
+		border: 1px solid #789;
+		border-radius: 8px;
+		padding: 4px;
+	}
+	#sinc{
+		display: inline-block;
+		color: #fff;
+		cursor: default;
+		width: 18px;
+		height: 18px;
+		background: url(images/fixed.gif) no-repeat center center;
+	}
+	.noclick{
+		background-color: #789;
+	}
+	#sinc:hover{
+		background-color: #fff;
+	}
+	.click{
+		background: url(images/ani.gif) no-repeat center center !important;
+		background-color: #fff !important;
+	}
+	#contenedor{
+		width: 255px;
+		height: 150px;
+		border-radius: 8px;
+	}
+	#desc{
+		margin-left: 10px;
+	}
+	.titulo{
+		font-size: 25px;
+		font-weight: bold;
+		display:inline-block;
+		padding-bottom: 17px;
+	}
+	#logo{
+		background: url(wifi.png) no-repeat left center;
+		background-size: cover;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		border-radius: 8px;
+		vertical-align: bottom;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+	body{
+		background-color: #def;
+	}
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="logo">&nbsp;</div>
+		<div class="titulo">Wifileaks Offline</div>
+		<input id="tags" placeholder="BSSID" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+		<div id="sinc" class="noclick">&nbsp;</div>
+		<div id="desc"></div>
+	</div>
+	<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none; "></ul>
+</body>
+</html>

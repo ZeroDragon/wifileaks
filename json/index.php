@@ -1,6 +1,7 @@
 <?php
 header('Content-type: application/json');
-include "dbconnect.php";
+header("Access-Control-Allow-Origin: *");
+include "../dbconnect.php";
 $query = "SELECT * FROM spots";
 //$datos = Array(0 => 'id', 1 => 'latitud', 2 => 'longitud', 3 => 'bssid', 4 =>'tipo', 5=> 'llave', 6=> 'bandera');
 $spots = Array();
@@ -11,5 +12,5 @@ while ($row = mysql_fetch_array($wifis)){
 	$contador ++;
 }
 //echo json_encode($spots);
-echo isset($_GET['callback']) ? "{$_GET['callback']}($spots)" : $spots;
+echo isset($_GET['callback']) ? "{$_GET['callback']}(".json_encode($spots).")" : json_encode($spots);
 ?>
