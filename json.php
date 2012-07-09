@@ -10,5 +10,6 @@ while ($row = mysql_fetch_array($wifis)){
 	$spots[] = Array('value'=>$row['llave'], 'label'=>$row['bssid'], 'tipo'=>$row['tipo'], 'bandera'=>$row['bandera']);
 	$contador ++;
 }
-echo json_encode($spots)
+//echo json_encode($spots);
+echo isset($_GET['callback']) ? "{$_GET['callback']}($spots)" : $spots;
 ?>
